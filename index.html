@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>percenatge Calc</h1>
+
+    <form onsubmit="per(); return false;">
+        <label for="tm">Tm</label>
+        <input type="number" name="tm" id="tm1">
+        <label for="om">Om</label>
+        <input type="number" name="om" id="om1">
+        <button type="submit">click</button>
+        </form>
+    <h1 id="res1">ahmad</h1>
+
+<script>
+   function per() {
+         let stdTotal_Marks = document.querySelector("#tm1").value;
+         let stdobt_Marks = document.querySelector("#om1").value;
+           res = (stdobt_Marks / stdTotal_Marks) * 100
+          document.querySelector("#res1").innerHTML=(`you have 
+          got it <br> ${res} %`);
+   }
+
+
+</script>
+
+
+</body>
+</html>
